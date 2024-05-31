@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000;
+    padding-bottom: 100px; /* Added padding to ensure send button is visible */
+}
+
+header {
+    background-color: #e7e726;
+    color: #000;
+    padding: 2em 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+section {
+    padding: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+#home {
+    background: #ddd;
+    color: #000;
+    padding-top: 0;
+}
+
+#about {
+    background: #ccc;
+    color: #000;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+#skills {
+    background: #eee;
+    color: #000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: disc;
+    padding-left: 0;
+    text-align: left;
+}
+
+#skills ul li {
+    margin: 0.5em 1em;
+}
+
+#experience {
+    background: #ccc;
+    color: #000;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.experience-item {
+    border: 1px solid #000;
+    padding: 1em;
+    width: 30%; /* Adjusted width to make the boxes smaller */
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+
+.experience-item a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.experience-item a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+.portfolio-item {
+    border: 1px solid #000;
+    margin: 1em;
+    padding: 1em;
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 40px; /* Added margin to ensure thank-you message is visible */
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    color: #000;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #e7e726;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+#thank-you {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    margin-top: 20px;
+}
