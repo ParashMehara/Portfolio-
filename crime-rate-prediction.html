@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('back3.png') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            margin: 20px;
+        }
+        .blurred-background {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: auto;
+        }
+        section h1, section h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-size: 2.5em;
+            -webkit-text-stroke: 1px black;
+            text-stroke: 1px black;
+        }
+        section p, section ul {
+            font-size: 1.2em;
+            color: #ffffff;
+            text-align: justify;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .screenshot-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .screenshot {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .screenshot-container a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="new.html#home">Home</a></li>
+                <li><a href="new.html#about">About</a></li>
+                <li><a href="new.html#skills">Skills</a></li>
+                <li><a href="new.html#experience">Experience</a></li>
+                <li><a href="new.html#portfolio">Projects</a></li>
+                <li><a href="new.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="project-details">
+        <div class="blurred-background">
+            <h1>Project: Crime Rate Prediction</h1>
+            <h2>Project Overview</h2>
+            <p>Crime Rate Prediction is a machine learning project aimed at predicting crime rates in urban areas based on historical data, demographic information, and geographical data. The goal is to demonstrate our ability to apply machine learning techniques for our university project.</p>
+            
+            <h2>Role and Responsibilities</h2>
+            <p>As the lead developer, I was responsible for collecting, filtering, and cleaning the dataset from various sources, such as government databases, law enforcement agencies, and research organizations. Additionally, I designed the machine learning model and integrated it into a web application. I used Python, Pandas, NumPy, and scikit-learn for data processing and model building, and Flask for the web application.</p>
+
+            <h2>Project Details</h2>
+            <p>The project collected crime data from various sources including government databases, law enforcement agencies, and research organizations, focusing on data from Alaska, USA. The model predicts crime rates using both linear regression and random forest regression models, taking inputs such as state, pin-code, year, and population.</p>
+
+            <h2>Development Process</h2>
+            <p>The project was developed in an Agile environment. We started with data collection and preprocessing, followed by feature engineering, model training, and evaluation. One major challenge was handling the imbalanced dataset, which was addressed using SMOTE (Synthetic Minority Over-sampling Technique).</p>
+
+            <h2>Technical Details</h2>
+            <ul>
+                <li><strong>Tech Stack:</strong> Python, Pandas, NumPy, scikit-learn, Flask</li>
+                <li><strong>Key Features:</strong> Real-time crime rate prediction, data visualization, API for third-party integration</li>
+                <li><strong>Technical Decisions:</strong> Chose Random Forest for its accuracy and interpretability</li>
+            </ul>
+
+            <h2>Outcomes and Impact</h2>
+            <ul>
+                <li><strong>Accuracy:</strong> Achieved an accuracy of 85% in crime rate prediction.</li>
+            </ul>
+
+            <h2>Screenshots/Demos</h2>
+            <div class="screenshot-container">
+                <a href="project_ss1.jpeg" target="_blank">
+                    <img src="project_ss1.jpeg" alt="Screenshot 1" class="screenshot">
+                    <p>Screenshot 1</p>
+                </a>
+                <a href="project_ss2.jpeg" target="_blank">
+                    <img src="project_ss2.jpeg" alt="Screenshot 2" class="screenshot">
+                    <p>Screenshot 2</p>
+                </a>
+                <a href="project_ss3.jpeg" target="_blank">
+                    <img src="project_ss3.jpeg" alt="Screenshot 3" class="screenshot">
+                    <p>Screenshot 3</p>
+                </a>
+                <a href="project_ss4.jpeg" target="_blank">
+                    <img src="project_ss4.jpeg" alt="Screenshot 4" class="screenshot">
+                    <p>Screenshot 4</p>
+                </a>
+            </div>
+
+            <h2>Lessons Learned</h2>
+            <p>I learned the importance of data preprocessing and the impact of imbalanced data on model performance. The project also enhanced my skills in Python and machine learning.</p>
+
+            <h2>Future Work</h2>
+            <p>Future plans include integrating additional data sources, such as weather and economic indicators, to improve prediction accuracy and developing a mobile app for on-the-go access.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Parash Mehara</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
